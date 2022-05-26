@@ -7,7 +7,7 @@ namespace MuteBlinkBeGoneMod
         public const string Name = "MuteBlinkBeGone";
         public const string Author = "Janni9009";
         public const string Company = "VRChat Modding Group";
-        public const string Version = "1.1";
+        public const string Version = "1.2";
         public const string DownloadLink = null;
     }
     public class MuteBlinkBeGone : MelonMod {
@@ -18,7 +18,7 @@ namespace MuteBlinkBeGoneMod
             | 2+: World (Fires every world change)
             */
             if (level == 1)
-                GameObject.Find("UserInterface/UnscaledUI/HudContent/Hud/VoiceDotParent/VoiceDotDisabled").GetComponent<FadeCycleEffect>().enabled = false;
+                GameObject.Find("UserInterface/UnscaledUI/HudContent_Old/Hud/VoiceDotParent/VoiceDotDisabled").GetComponent<FadeCycleEffect>().enabled = false;
         }
     }
 }
